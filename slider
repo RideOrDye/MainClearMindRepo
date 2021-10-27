@@ -32,3 +32,51 @@
         <script src="slider-js-component.js"></script>
   </body>
 </html>
+
+
+*{
+    padding:0;
+  }
+  ul {
+    list-style: none;
+    width:50px;
+  }
+  
+  .container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   
+  }
+  
+  
+  .range {
+    height:200px;
+    width: 10px;
+    background-color: black;
+    border-radius: 2px;
+    position:relative;
+    
+  }
+  
+  #slider{
+    position:absolute;
+    width:20px;
+    height: 40px;
+    background-color:red;
+    
+      
+  }
+  
+  const slider = document.querySelector(`#slider`);
+
+slider.addEventListener('mousedown', start);
+slider.addEventListener('mouseup', stop);
+function start(e){ document.addEventListener('mousemove', move);
+}
+function move (e){
+  slider.style.bottom = `${e.x}px`;
+  slider.style.top = `${e.y}px`
+}
+function stop(){ document.removeEventListener('mousemove', move);
+}
