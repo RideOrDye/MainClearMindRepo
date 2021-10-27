@@ -1,1 +1,2 @@
-# MainClearMindRepo![Slider](https://user-images.githubusercontent.com/63518641/139015361-3b8e0414-b422-46b2-af7c-398706687fbd.jpeg)
+
+<img width="1087" alt="slider" src="https://user-images.githubusercontent.com/63518641/139015690-1bae36e8-871a-47d2-916a-901327689713.png">
