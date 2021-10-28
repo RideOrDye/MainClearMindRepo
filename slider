@@ -2,39 +2,8 @@
 <DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="index.css">
-    <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
-  </head>
-<!--body starts here -->
-  <body>
-    <div class="container" >
-        <div>
-            <ul class="nu">
-              <li>100 -</li>
-              <li>90 -</li>
-              <li>80 -</li>
-              <li>70 -</li>
-              <li>60 -</li>
-              <li>50 -</li>
-              <li>40 -</li>
-              <li>30 -</li>
-              <li>20 -</li>
-              <li>10 -</li>
-              <li> 0 - </li>
-          </ul>
-          </div>
-              <div class="range">
-              <div id="slider">
-               </div>
-            </div>
-        </div>
-        <script src="slider-js-component.js"></script>
-  </body>
-</html>
-
-
-*{
+    <style>
+      *{
     padding:0;
   }
   ul {
@@ -63,20 +32,56 @@
     position:absolute;
     width:20px;
     height: 40px;
-    background-color:red;
-    
-      
+    background-color:red;    
   }
-  
-  const slider = document.querySelector(`#slider`);
 
-slider.addEventListener('mousedown', start);
-slider.addEventListener('mouseup', stop);
-function start(e){ document.addEventListener('mousemove', move);
-}
-function move (e){
-  slider.style.bottom = `${e.x}px`;
-  slider.style.top = `${e.y}px`
-}
-function stop(){ document.removeEventListener('mousemove', move);
-}
+    </style>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+<!--body starts here -->
+  <body>
+    <div class="container" >
+        <div>
+            <ul class="nu">
+              <li>100 -</li>
+              <li>90 -</li>
+              <li>80 -</li>
+              <li>70 -</li>
+              <li>60 -</li>
+              <li>50 -</li>
+              <li>40 -</li>
+              <li>30 -</li>
+              <li>20 -</li>
+              <li>10 -</li>
+              <li> 0 - </li>
+          </ul>
+          </div>
+              <div class="range">
+              <div id="slider">
+               </div>
+            </div>
+        </div>
+        <script>
+      const slider = document.querySelector(`#slider`);
+
+        slider.addEventListener('mousedown', start);
+        slider.addEventListener('mouseup', stop);
+        function start(e){ 
+        document.addEventListener('mousemove', move);
+        }
+        function move (e){
+          slider.style.bottom = `${e.x}px`;
+          slider.style.top = `${e.y}px`
+        }
+        function stop(){ 
+        document.removeEventListener('mousemove', move);
+        }
+
+        </script>
+  </body>
+</html>
+
+
+
+  
