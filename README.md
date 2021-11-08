@@ -1,2 +1,1 @@
-
-<img width="1087" alt="slider" src="https://user-images.githubusercontent.com/63518641/139015690-1bae36e8-871a-47d2-916a-901327689713.png">
+<img width="1061" alt="Screen Shot 2021-11-08 at 12 57 33 PM" src="https://user-images.githubusercontent.com/63518641/140817209-5b9f97e5-3bbd-46a2-bbda-6f2e1941c6b5.png">
