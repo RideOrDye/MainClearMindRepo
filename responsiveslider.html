@@ -124,7 +124,7 @@
 
                     if (sliderSize === 'small') {
                         range.style.height = '200px';
-                    } else if (buttonSize === 'medium') {
+                    } else if (sliderSize === 'medium') {
                         range.style.height = '300px';
                     } else {
                         range.style.height = '400px';
@@ -134,7 +134,7 @@
                 }
 
 
-                sliderFunc('large', 'red', 'small', '5px')
+                sliderFunc('large', 'red', '', '5px')
 
                 //The event listeners that trigger mouseup and down
                 slider.addEventListener('mousedown', start);
@@ -157,4 +157,5 @@
 
             </script>
     </body>
+
     </html>
