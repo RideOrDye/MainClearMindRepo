@@ -44,7 +44,6 @@ const sliderFunc = (buttonSize, colorTheme, sliderSize, buttonPosition) => {
     }
 
     slider.style.top = buttonPosition;
-}
 
 
 sliderFunc('large', 'blue', '', '5px');
