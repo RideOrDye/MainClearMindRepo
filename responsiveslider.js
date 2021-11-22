@@ -2,18 +2,34 @@
 const slider = document.querySelector(`#slider`);
 const range = document.querySelector(`.range`);
 const nu = document.querySelector(`.nu`);
+const colorPickerJs = document.getElementById("color-picker");
+const submitButton = document.querySelector("input[type=submit]");
+const buttonSize = document.getElementById('buttonSize');
+const sliderSize = document.getElementById('sliderSize');
+const submit = document.getElementById('submitButton');
+const rangeField = document.getElementById('rangeField');
 
+//onSubmit is performing onclick funtionality for all settings at once
+submit.addEventListener('click', function() {
+  
+    sliderFunc(buttonSize.value,'blue',sliderSize.value, rangeField.value, '0px');
+    changeColor()
+  })
+  
+  function changeColor(){
+    let colorPickerJS = document.getElementById('color-picked').value;
+    document.body.style.backgroundColor = colorPickerJS;
+  }
 /*
-
 arrow function below consist of if statements checks that check for parameters 
 (buttonSize, colorTheme, sliderSize, buttonPosition) 
 buttonSize = [small,medium,large]
-colorTheme = [blue, red]
+colorTheme = [blue, red] (disabled feature)
 sliderSize = adjusts size of button [small,medium,large]
-buttonPosition = postion of the button on track bar (0px-160px) 
+rangeNum = has a user input max of 200;
+buttonPosition = is at a default position
 */
-
-const sliderFunc = (buttonSize, colorTheme, sliderSize, buttonPosition) => {
+const sliderFunc =  (buttonSize, colorTheme, sliderSize, rangeNum, buttonPosition)=> {
     if (buttonSize === 'small') {
         slider.style.height = '20px';
         slider.style.width = '10px';
@@ -36,17 +52,29 @@ const sliderFunc = (buttonSize, colorTheme, sliderSize, buttonPosition) => {
     }
 
     if (sliderSize === 'small') {
-        range.style.height = '200px';
-    } else if (sliderSize === 'medium') {
         range.style.height = '300px';
-    } else {
+        nu.style.fontSize = "8px";
+    } else if (sliderSize === 'medium') {
         range.style.height = '400px';
+        nu.style.fontSize = "10px";
+    } else {
+        range.style.height = '500px';
+        nu.style.fontSize = "12px"
     }
 
     slider.style.top = buttonPosition;
 
-
-sliderFunc('large', 'blue', '', '5px');
+// range input is being passed as a parameter and looped
+if(rangeNum != '') {
+    nu.innerHTML = '';
+    for (let i = 0; i <= rangeNum; i+= 10) {
+      var child = document.createElement("li");                 
+      var textnode = document.createTextNode(`${rangeNum - i} -`);         
+      child.appendChild(textnode);                              
+      nu.appendChild(child); 
+     }
+    }
+}
 
 //The event listeners that trigger mouseup and down
 slider.addEventListener('mousedown', start);
