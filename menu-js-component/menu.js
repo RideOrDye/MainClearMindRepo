@@ -1,10 +1,11 @@
 
 const women = document.getElementById('women');
 const categories = ["shoes","bags", "jewelery"];
-const bags = ["tote", "crossbag","handbag"]
-const womenUl = document.createElement('ul')
+const bags = ["tote", "crossbag","handbag"];
+const womenUl = document.createElement('ul');
 
 
+//Can I create a a multi-level menu with a nested for loop? 
 function makeUL(array) {
  
     for (var i = 0; i < array.length; i++) {
@@ -19,11 +20,11 @@ function makeUL(array) {
    return women;
 }
 
-// couldnt get the same result when used getElementByClassName
 
 
 //this function is selecting second 'li' in categories and display block the subcategory of bags. 
 //It is the the second level of multilevel dropdown
+//Not sure if I should abandon this idea
 function dropDown(a) {
    // var li = a.parentElement,
     submenu = li.getElementsByTagName('ul')[0];

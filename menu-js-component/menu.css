@@ -30,6 +30,7 @@ a{
     
 }
 
+
 li {
     display: inline;
     padding: 2px 5px 2px;
@@ -43,11 +44,11 @@ ul {
     justify-content: space-around;
     }
 
-/*can't use space-between featur on id*/
+
 #categories{
     display: flex;
    justify-content: space-between;
-   background-color: yellow;   
+   background-color: peachpuff;   
    
 }
 
