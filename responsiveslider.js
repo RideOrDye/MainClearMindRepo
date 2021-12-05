@@ -3,14 +3,14 @@ const slider = document.querySelector(`#slider`);
 const range = document.querySelector(`.range`);
 const nu = document.querySelector(`.nu`);
 const colorPickerJs = document.getElementById("color-picker");
-const submitButton = document.querySelector("input[type=submit]");
+const submitButton = document.querySelector("input[type=submitAll]");
 const buttonSize = document.getElementById('buttonSize');
 const sliderSize = document.getElementById('sliderSize');
-const submit = document.getElementById('submitButton');
+const submitAll = document.getElementById('submitButton');
 const rangeField = document.getElementById('rangeField');
 
 //onSubmit is performing onclick funtionality for all settings at once
-submit.addEventListener('click', function() {
+submitAll.addEventListener('click', function() {
   
     sliderFunc(buttonSize.value,'blue',sliderSize.value, rangeField.value, '0px');
     changeColor()

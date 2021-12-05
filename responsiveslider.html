@@ -6,40 +6,41 @@
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="responsiveslider.css">
     </head>
+
     <body>
         <div class="container">
 
-        <div class="panel">
-            <h2>Control Panel</h2>
-            <div class="options">
-                <label>
-                Slider Button
-                <select id="buttonSize">
-                  <option selected>large</option>
-                  <option>medium</option>
-                  <option>small</option>
-              </select>
-              </label>
-              <label>
-                Slider Size
-                <select id="sliderSize">
-                  <option>large</option>
-                  <option>medium</option>
-                  <option selected>small</option>
-              </select>
-              </label>
-              <label>
-                Background color
-                <input type="color" value="#ffffff" id="color-picked">
-              </label>
-              <label>
-                Range
-                <input type="text" placeholder="max 200" id="rangeField">
-              </label>
+            <div class="panel">
+                <h2>Control Panel</h2>
+                <div class="options">
+                    <label>
+                        Slider Button
+                        <select id="buttonSize">
+                            <option selected>large</option>
+                            <option>medium</option>
+                            <option>small</option>
+                        </select>
+                    </label>
+                    <label>
+                        Slider Size
+                        <select id="sliderSize">
+                            <option>large</option>
+                            <option>medium</option>
+                            <option selected>small</option>
+                        </select>
+                    </label>
+                    <label>
+                        Background color
+                        <input type="color" value="#ffffff" id="color-picked">
+                    </label>
+                    <label>
+                        Range
+                        <input type="text" placeholder="max 200" id="rangeField">
+                    </label>
+                </div>
+                <button id="submitButton">submit</button>
             </div>
-            <button id="submitButton">submit</button>
-            </div>
-       
+
             <div class="content">
                 <div>
                     <ul class="nu">
@@ -58,11 +59,11 @@
                 </div>
                 <div class="align">
                     <div class="range">
-                        <div id="slider">
-                        </div>
+                        <div id="slider"></div>
                     </div>
                 </div>
             </div>
-         <script src="responsiveslider.js"></script>
+            <script src="responsiveslider.js"></script>
     </body>
+
     </html>
