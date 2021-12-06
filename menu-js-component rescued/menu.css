@@ -5,7 +5,6 @@
     font-family: 'Shippori Antique B1', sans-serif;
 }
 
-
 .black-banner{
     background-color:black;
     color: white;
@@ -34,20 +33,14 @@ li{
     display: inline;
     padding: 2px 5px 2px;
     text-decoration: none;
+    list-style-type: none;
     
 }
-
-ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    }
-
 
 #categories{
     display: flex;
    justify-content: space-between;
-   background-color: peachpuff;   
+ 
    
 }
 

@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="menu.css" />
+        <title>menu-js-component</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="menu.css">
-    <title>menu-js-component</title>
-</head>
+    <body>
+        <header>
+            <nav>
+                <div class="black-banner">
+                    <p>
+                        <b>Shop Early!</b> We have great gift ideas and convenient pick-up.
+                    </p>
+                </div>
+                <div style="display: flex; justify-content: space-between">
+                    <a>STOREFRONT</a>
+                    <ul>
+                        <li>Search</li>
+                        <li>Sign In</li>
+                        <li>Shopping Bag</li>
+                    </ul>
+                </div>
+            </nav>
+            <section>
+                <div id="categories">
+                    <a href="#" id="women"><span id="womenLi" onmouseover="{dropDown(womenUl)}">Women</span></a>
+                    <a href="#" id="men"><span id="menLi" onmouseover="{dropDown(menUl)}">Men</span></a>
+                    <a href="#" id="kids"><span id="kidLi" onmouseover="{dropDown(kidsUl)}">Kids</span></a>
+                    <a href="#" id="activeware"><span id="activeLi" onmouseover="{dropDown(activeUl)}">Activeware</span></a>
+                    <a href="#" id="home"><span id="homeLi" onmouseover="{dropDown(homeUl)}">Home</span></a>
+                    <a href="#" id="beauty"> <span id="beautyLi" onmouseover="{dropDown(kidsUl)}">Beauty</span></a>
 
-<body>
-    <header>
-        <nav>
-            <div class="black-banner">
-                <p><b>Shop Early!</b> We have great gift ideas and convenient pick-up.</p>
-            </div>
-            
-                <a>STOREFRONT</a>
-                <h3>options below need to be in-line with STOREFRONT and group together on the far right</h3>
-                <ul>
-                    <li>create a pop-up box on search hover </li>
-                    <li>Search</li>
-                    <li>Sign In</li>
-                    <li>Shopping Bag</li>
-                </ul>
-            </div> 
-        </nav>
-        <section>
-            <div id="categories">
-               <a href="#" id="women" onclick="{makeUL(categories)}">Women</a>
-               <ul></ul>
-               <a href="#">Men</a>
-               <ul id="men"></ul>
-               <a href="#">Kids</a>
-               <ul class="more-options"></ul>
-               <a href="#">Activeware</a>
-               <ul class="more-options"></ul>
-               <a href="#">Home</a>
-               <ul class="more-options"></ul>
-               <a href="#">Beauty</a>
-            </div>
-
-            <h3> when onclick is pressed twice it returns the same list. would like options hidden after button is pressed twice  </h3>
-        </section>
-      
-    </header>
-    <script src="menu.js"></script>
-</body>
-
+                </div>
+            </section>
+        </header>
+        <script src="menu.js"></script>
+    </body>
 </html>
